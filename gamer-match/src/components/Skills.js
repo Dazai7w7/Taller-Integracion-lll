@@ -1,6 +1,6 @@
 import meter1 from "../assets/img/meter1.jpg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import meter2 from "../assets/img/meter2.jpg";
+import meter3 from "../assets/img/meter3.jpg";
 import meter4 from "../assets/img/meter4.jpg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -36,7 +36,7 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Varios Titulos</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <p>Podras encontrar algunos de  tus titulos favoritos en GamerMatch</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter4} alt="Image" />
@@ -44,11 +44,11 @@ export const Skills = () => {
                             </div>
                             <div className="item">
                                 <img src={meter2} alt="Image" />
-                                <h5>Brand Identity</h5>
+                                <h5>Valorant</h5>
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
+                                <h5>Fornite</h5>
                             </div>
                             <div className="item">
                                 <img src={meter1} alt="Image" />
