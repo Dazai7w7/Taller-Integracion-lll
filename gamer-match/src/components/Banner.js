@@ -11,8 +11,8 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
-  const period = 2000;
+  const toRotate = [ "Para vosotros, jugadores" ];
+  const period = 500;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -48,7 +48,7 @@ export const Banner = () => {
   }
 
   return (
-    <section className="banner" id="home">
+    <section className="banner" id="inicio">
       <Container>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
@@ -56,9 +56,9 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Bienvenido a GamerMatch</span>
-                <h1>{`Hi! I'm Judy`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                <h1>{`Hola!, GamerMatch esta hecha`} <span className="txt-rotate" dataPeriod="500" data-rotate='["Para vosotros, jugadores"]'><span className="wrap">{text}</span></span></h1>
+                  <p>GamerMatch es una aplicación social diseñada para ayudar a los jugadores de ideas afines a encontrarse para compartir todos los momentos épicos de juego, batallas, victorias, derrotas, rutinas, relajación y viajes, y tal vez construir una amistad virtual duradera.</p>
+                  <button onClick={() => console.log('connect')}>Ingresa aqui! <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
           </Col>

@@ -43,7 +43,7 @@ export const Projects = () => {
   ];
 
   return (
-    <section className="project" id="project">
+    <section className="project" id="siguiendo">
       <Container>
         <Row>
           <Col size={12}>
