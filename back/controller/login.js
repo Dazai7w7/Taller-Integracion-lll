@@ -3,9 +3,9 @@ const Usuario = require("../model/user");
 const jwt = require("jsonwebtoken");
 
 const login = async (req, res) => {
-  const { correo, contraseña } = req.body;
+  const { username, contraseña } = req.body;
 
-  Usuario.findOne({ correo }).then((usuario) => {
+  Usuario.findOne({ username }).then((usuario) => {
     if (!usuario) {
       return res.json({ mensaje: "Usuario no encontrado" });
     }
