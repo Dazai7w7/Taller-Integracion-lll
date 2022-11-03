@@ -1,11 +1,10 @@
 const card = require("../model/card")
 
 const createCard = async (req, res) =>{
-    const { nombre_juego, ranked_o_casual, horario, descripcion } = req.body;
+    const { game, horario, descripcion } = req.body;
 
     const nuevaTarjeta = new card({
-        nombre_juego,
-        ranked_o_casual,
+        game,
         horario,
         descripcion
     });
@@ -17,7 +16,6 @@ const createCard = async (req, res) =>{
         })
         .catch((error) => console.log(error));
 };
-
 
 
 module.exports = createCard

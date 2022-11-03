@@ -12,7 +12,7 @@ app.use(express.json());
 app.get("/user/:id", controller.getUserById);
 app.post("/register", controller.register);
 app.post("/login", controller.login);
-app.post("/createcard", controller.createCard);
+app.post("/crearTarjeta", controller.createCard);
 
 const PORT = 4000;
 

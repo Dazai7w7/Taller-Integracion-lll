@@ -2,6 +2,7 @@ import './App.css';
 import Home from './pages/home';
 import Login from './pages/login';
 import Register from './pages/register';
+import Tarjeta from './pages/createCard';
 import './pages/Index.css'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import data from './data';
@@ -20,6 +21,7 @@ function App() {
             />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path='/crearTarjeta' element={<Tarjeta />}/>
           </Routes>
         </Router>
       </data.Provider>
