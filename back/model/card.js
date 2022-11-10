@@ -5,7 +5,7 @@ const CardSchema = new Schema({
     nombre_juego: String,
     // ranked_o_casual: Boolean,
     descripcion: String,
-    horario: Date,
+    horario: String,
     fecha_creacion: {type: Date, default: Date.now},
     autor: { type: mongoose.Schema.Types.ObjectId,
             ref: 'user'}

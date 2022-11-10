@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import axios from 'axios'
-// import data from '../data'
+import data from '../data'
 import { useNavigate } from 'react-router-dom'
 
 export const Login = () => {
@@ -8,7 +8,7 @@ export const Login = () => {
         username: "",
         repassword: ""
     })
-    // const { info } = useContext(data)
+    const { info } = useContext(data)
     const navigate = useNavigate()
 
     const handleChange = (e) => {
@@ -26,9 +26,9 @@ export const Login = () => {
         axios.post("http://localhost:4000/login", body)
             .then((res) => {
                 alert(res.data.message)
-                // info(res.data.body)
+                info(res.data.body)
 				console.log(body)
-                navigate("/")
+                navigate("/home")
             })
     }
 

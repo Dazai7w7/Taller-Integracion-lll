@@ -3,6 +3,7 @@ import Home from './pages/home';
 import Login from './pages/login';
 import Register from './pages/register';
 import Tarjeta from './pages/createCard';
+import MostrarTarjetas from './pages/showCards';
 import './pages/Index.css'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import data from './data';
@@ -16,12 +17,13 @@ function App() {
       <data.Provider value={{userdata,setUserData}}>
         <Router>
           <Routes>
-            <Route path="/"
+            <Route path="/home"
               element={userdata && userdata._id ? <Home /> : <Login/>}
             />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path='/crearTarjeta' element={<Tarjeta />}/>
+            <Route path='/mostrarTarjeta' element={<MostrarTarjetas/>}/>
           </Routes>
         </Router>
       </data.Provider>

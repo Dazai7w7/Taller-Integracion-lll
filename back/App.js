@@ -13,6 +13,7 @@ app.get("/user/:id", controller.getUserById);
 app.post("/register", controller.register);
 app.post("/login", controller.login);
 app.post("/crearTarjeta", controller.createCard);
+app.get("/mostrarTarjetas", controller.showCards);
 
 const PORT = 4000;
 
